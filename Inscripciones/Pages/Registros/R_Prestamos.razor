@@ -88,11 +88,11 @@
 </EditForm>
 
 @code {
-    private List<Personas> ListaPersonas = PersonasBLL.GetList(p => true);
+    public List<Personas> ListaPersonas { get; set; }
 
-    private string SeleccionId;
+    public string SeleccionId { get; set; } = "0";
 
-    private Prestamos Prestamo = new Prestamos();
+    public Prestamos Prestamo { get; set; }
 
     protected override void OnInitialized()
     {
@@ -104,6 +104,9 @@
         Prestamo = new Prestamos();
 
         ListaPersonas = PersonasBLL.GetList(p => true);
+
+        if (ListaPersonas.Count > 0)
+            SeleccionId = Convert.ToString(ListaPersonas.First().PersonaId);
     }
 
     private void Buscar()
@@ -134,6 +137,12 @@
     public void Guardar()
     {
         bool guardo = false;
+
+        if(SeleccionId == "0")
+        {
+            toast.ShowInfo("Debe seleccionar a una persona");
+            return;
+        }
 
         Prestamo.PersonaId = Convert.ToInt32(SeleccionId);
 

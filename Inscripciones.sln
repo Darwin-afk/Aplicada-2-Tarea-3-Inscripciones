@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29920.165
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inscripciones", "Inscripciones\Inscripciones.csproj", "{A41648D3-E9BF-40C4-8321-1C46B0D07843}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InscripcionesTests", "InscripcionesTests\InscripcionesTests.csproj", "{41971A98-9703-40DC-BA5F-C07C6255FD65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InscripcionesTests", "InscripcionesTests\InscripcionesTests.csproj", "{41971A98-9703-40DC-BA5F-C07C6255FD65}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InscripcionesApp", "InscripcionesApp", "{0608CB3C-93BC-4652-A6BC-8147792BF0C1}"
 EndProject

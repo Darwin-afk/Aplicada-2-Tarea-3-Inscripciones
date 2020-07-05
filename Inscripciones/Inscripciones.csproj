@@ -14,10 +14,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <None Update="Data\Inscripciones.db">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
 </Project>
